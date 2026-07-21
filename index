@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tradesporter | Empowering India's Ambitious Youth</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts (Inter) -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            orange: '#F26522',
+                            orangeHover: '#d85416',
+                            navy: '#1A2B4C',
+                            darkNavy: '#0F1A2E',
+                            lightBg: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-white antialiased">
+
+    <!-- Header / Navbar -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Logo -->
+            <a href="#home" class="flex items-center gap-3">
+                <div class="w-10 h-10 rounded-full bg-brand-orange flex items-center justify-center text-white font-bold text-xl shadow-md">
+                    T
+                </div>
+                <span class="text-2xl font-bold text-gray-900 tracking-tight">Tradesporter</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex items-center gap-8 font-medium text-gray-600 text-sm">
+                <a href="#home" class="hover:text-brand-orange transition-colors">Home</a>
+                <a href="#about" class="hover:text-brand-orange transition-colors">About</a>
+                <a href="#programs" class="hover:text-brand-orange transition-colors">Programs</a>
+                <a href="#impact" class="hover:text-brand-orange transition-colors">Impact</a>
+                <a href="#why-us" class="hover:text-brand-orange transition-colors">Why Us</a>
+                <a href="#testimonials" class="hover:text-brand-orange transition-colors">Testimonials</a>
+                <a href="#contact" class="hover:text-brand-orange transition-colors">Contact</a>
+            </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden md:block">
+                <a href="#contact" class="bg-brand-orange text-white px-6 py-2.5 rounded-full font-medium text-sm hover:bg-brand-orangeHover transition-all shadow-md hover:shadow-lg">
+                    Apply Now
+                </a>
+            </div>
+
+            <!-- Mobile Menu Button -->
+            <button id="menu-btn" class="md:hidden text-gray-700 text-2xl focus:outline-none">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation Drawer -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-gray-200 px-6 py-4 flex flex-col gap-4 font-medium text-gray-700">
+            <a href="#home" class="mobile-link">Home</a>
+            <a href="#about" class="mobile-link">About</a>
+            <a href="#programs" class="mobile-link">Programs</a>
+            <a href="#impact" class="mobile-link">Impact</a>
+            <a href="#why-us" class="mobile-link">Why Us</a>
+            <a href="#testimonials" class="mobile-link">Testimonials</a>
+            <a href="#contact" class="mobile-link">Contact</a>
+            <a href="#contact" class="bg-brand-orange text-white text-center py-2.5 rounded-full font-medium">Apply Now</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-brand-navy text-white min-h-[580px] flex items-center py-20 overflow-hidden">
+        <!-- Background Overlay Image -->
+        <div class="absolute inset-0 z-0 opacity-20 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80');"></div>
+        <div class="absolute inset-0 bg-gradient-to-r from-brand-darkNavy via-brand-navy/90 to-transparent z-0"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-2xl">
+                <!-- Badge -->
+                <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-1.5 rounded-full text-xs font-semibold text-gray-200 mb-6 border border-white/10">
+                    <span class="w-2 h-2 rounded-full bg-brand-orange animate-pulse"></span>
+                    Admissions open for 2026 batch
+                </div>
+
+                <!-- Headline -->
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white leading-tight mb-6">
+                    Empowering India's <br>
+                    <span class="text-brand-orange">Ambitious Youth</span>
+                </h1>
+
+                <!-- Subtitle -->
+                <p class="text-lg text-gray-300 mb-8 leading-relaxed">
+                    We bridge the gap between young talent from rural and urban India and real employment opportunities. Build practical, market-ready skills in IT, Marketing, Retail, and Logistics.
+                </p>
+
+                <!-- Action Buttons -->
+                <div class="flex flex-wrap items-center gap-4">
+                    <a href="#contact" class="bg-brand-orange hover:bg-brand-orangeHover text-white px-7 py-3.5 rounded-full font-semibold transition-all flex items-center gap-2 shadow-lg">
+                        Start Your Career <i class="fa-solid fa-arrow-right text-sm"></i>
+                    </a>
+                    <a href="#programs" class="border border-white/30 hover:bg-white/10 text-white px-7 py-3.5 rounded-full font-semibold transition-all">
+                        Explore Programs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Government Initiatives Banner -->
+    <section class="bg-gray-100 py-6 border-b border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-wrap items-center justify-between gap-6">
+            <div class="text-sm font-semibold text-gray-500 uppercase tracking-wider">
+                Recognized Implementation Partner:
+            </div>
+            <div class="flex flex-wrap items-center gap-8 font-bold text-gray-700 text-lg">
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-award text-brand-orange"></i> DDU-GKY <span class="text-xs font-normal text-gray-500">(Deen Dayal Upadhyaya Grameen Kaushalya Yojana)</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <i class="fa-solid fa-certificate text-brand-orange"></i> PMKVY <span class="text-xs font-normal text-gray-500">(Pradhan Mantri Kaushal Vikas Yojana)</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="py-20 bg-brand-lightBg">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-4">Our Skill Programs</h2>
+                <p class="text-gray-600">Focused entirely on what employers actually need to succeed in modern MNC workplace environments.</p>
+            </div>
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Program 1: IT -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Information Technology</h3>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                            Master web development, computer basics, and modern digital tools required for the digital economy.
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 text-xs">
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                        <p class="font-bold text-gray-800 mb-3">6 Months</p>
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Career Paths</p>
+                        <p class="text-gray-700 font-medium">Software Developer, IT Support, Web Designer</p>
+                    </div>
+                </div>
+
+                <!-- Program 2: Marketing -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-chart-line"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Marketing</h3>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                            Learn digital marketing, sales strategies, and brand communication to drive business growth.
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 text-xs">
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                        <p class="font-bold text-gray-800 mb-3">4 Months</p>
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Career Paths</p>
+                        <p class="text-gray-700 font-medium">Digital Marketer, Sales Executive, Social Media Manager</p>
+                    </div>
+                </div>
+
+                <!-- Program 3: Retail -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-store"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Retail</h3>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                            Develop skills in customer service, inventory management, and point-of-sale operations.
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 text-xs">
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                        <p class="font-bold text-gray-800 mb-3">3 Months</p>
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Career Paths</p>
+                        <p class="text-gray-700 font-medium">Store Manager, Customer Success Executive, Inventory Specialist</p>
+                    </div>
+                </div>
+
+                <!-- Program 4: Logistics -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-100 flex flex-col justify-between hover:shadow-md transition-shadow">
+                    <div>
+                        <div class="w-12 h-12 rounded-xl bg-orange-100 text-brand-orange flex items-center justify-center text-xl mb-6">
+                            <i class="fa-solid fa-truck-fast"></i>
+                        </div>
+                        <h3 class="text-xl font-bold text-gray-900 mb-3">Logistics</h3>
+                        <p class="text-sm text-gray-600 mb-6 leading-relaxed">
+                            Understand supply chain management, warehousing, and modern transportation management.
+                        </p>
+                    </div>
+                    <div class="border-t border-gray-100 pt-4 text-xs">
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Duration</p>
+                        <p class="font-bold text-gray-800 mb-3">4 Months</p>
+                        <p class="text-gray-400 font-semibold uppercase tracking-wider mb-1">Career Paths</p>
+                        <p class="text-gray-700 font-medium">Logistics Coordinator, Warehouse Manager, Supply Chain Analyst</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials / Success Stories Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mb-3">Success Stories</h2>
+                <p class="text-gray-600">Hear from our alumni who transformed their careers.</p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-brand-lightBg p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-orange text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-6">
+                            "Coming from a small town, working in an IT company felt like a dream. Tradesporter's web development course gave me the skills and the interview confidence I needed."
+                        </p>
+                    </div>
+                    <div class="font-bold text-gray-900 text-sm">Alumni - Web Development</div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="bg-brand-lightBg p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-orange text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-6">
+                            "The practical approach in the retail management program was amazing. I learned exactly how a modern store operates and got placed within a week of finishing."
+                        </p>
+                    </div>
+                    <div class="font-bold text-gray-900 text-sm">Alumni - Retail Management</div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="bg-brand-lightBg p-8 rounded-2xl border border-gray-100 flex flex-col justify-between">
+                    <div>
+                        <div class="text-brand-orange text-sm mb-4">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                        <p class="text-gray-700 text-sm leading-relaxed mb-6">
+                            "I had the passion but lacked direction. The digital marketing program taught me real tools used in agencies today. Now I manage campaigns for top brands."
+                        </p>
+                    </div>
+                    <div class="font-bold text-gray-900 text-sm">Alumni - Digital Marketing</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Application Section -->
+    <section id="contact" class="py-20 bg-brand-lightBg border-t border-gray-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                
+                <!-- Contact Details -->
+                <div>
+                    <span class="text-brand-orange font-semibold text-sm uppercase tracking-wider">Get In Touch</span>
+                    <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-2 mb-6">Trade Sporter Private Limited</h2>
+                    <p class="text-gray-600 mb-8 leading-relaxed">
+                        Dedicated to skilling underprivileged youth and empowering them with high-growth employment in top corporate partners and MNCs across India.
+                    </p>
+
+                    <div class="space-y-6 text-gray-700">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-100 text-brand-orange flex items-center justify-center shrink-0 mt-1">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Head Office Address</h4>
+                                <p class="text-sm text-gray-600">Plot no. 60, First floor, Second Line,<br>K.P. Nagar, Vijayawada - 520007</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-100 text-brand-orange flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Email Address</h4>
+                                <a href="mailto:tradesporter@gmail.com" class="text-sm text-brand-orange hover:underline">tradesporter@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 rounded-lg bg-orange-100 text-brand-orange flex items-center justify-center shrink-0">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-gray-900">Phone / WhatsApp</h4>
+                                <a href="tel:9989481466" class="text-sm text-brand-orange hover:underline">+91 9989481466</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="bg-white p-8 rounded-2xl shadow-sm border border-gray-200">
+                    <h3 class="text-2xl font-bold text-gray-900 mb-2">Apply for Free Training</h3>
+                    <p class="text-sm text-gray-500 mb-6">Fill out the details below and our team will get back to you shortly.</p>
+
+                    <form onsubmit="alert('Thank you! Your application has been submitted successfully.'); return false;" class="space-y-4">
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Full Name</label>
+                            <input type="text" required placeholder="Enter your full name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-orange/50 focus:border-brand-orange text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Mobile Number</label>
+                            <input type="tel" required placeholder="Enter 10-digit mobile number" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-orange/50 focus:border-brand-orange text-sm">
+                        </div>
+                        <div>
+                            <label class="block text-xs font-semibold text-gray-700 uppercase mb-1">Interested Program</label>
+                            <select class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-brand-orange/50 focus:border-brand-orange text-sm text-gray-700">
+                                <option>Information Technology</option>
+                                <option>Marketing</option>
+                                <option>Retail</option>
+                                <option>Logistics</option>
+                            </select>
+                        </div>
+                        <button type="submit" class="w-full bg-brand-orange hover:bg-brand-orangeHover text-white py-3.5 rounded-lg font-bold text-sm shadow-md transition-all">
+                            Submit Application
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-brand-darkNavy text-gray-400 py-8 border-t border-white/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-xs">
+            <p>© 2026 Trade Sporter Private Limited. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const menuBtn = document.getElementById('menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+    </script>
+</body>
+</html>
